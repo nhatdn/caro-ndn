@@ -7,7 +7,7 @@ app.set("views", "./views");
 var server = require("http").Server(app);
 var io = require("socket.io")(server);
 
-server.listen(3000);
+server.listen(process.env.PORT || 3000);
 let checkingFirst = false;
 let countClicked = 0;
 io.on("connection", function(socket) {

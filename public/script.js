@@ -1,4 +1,4 @@
-var socket = io("http://192.168.1.12:3000");
+var socket = io("https://ndn-caro.herokuapp.com");
 var listItems = document.querySelectorAll(".item");
 listItems = [...listItems];
 

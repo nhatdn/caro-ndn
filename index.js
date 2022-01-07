@@ -21,7 +21,6 @@ io.on("connection", function(socket) {
     socket.on("User-clicked", (data) => {
         countClicked++;
         io.sockets.emit("Server-send-data", {pos: data, userID : socket.id});
-        console.log(countClicked);
         if(countClicked == 9) {
             countClicked = 0;
             io.sockets.emit("Game-Over", "Game over");

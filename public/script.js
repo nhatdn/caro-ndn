@@ -1,4 +1,4 @@
-var socket = io("https://ndn-caro.herokuapp.com");
+var socket = io("http://localhost:3000");
 var listItems = document.querySelectorAll(".item");
 listItems = [...listItems];
 
